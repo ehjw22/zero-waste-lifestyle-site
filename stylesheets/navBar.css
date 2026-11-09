@@ -1,0 +1,51 @@
+/* Header and Nav */
+header {
+    background: #588157;
+    padding: 20px;
+    color: white;
+    top:0;
+    position: sticky;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleNImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+}
+nav a {
+    text-decoration: none;
+}
+
+nav h1 {
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 25px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    border: solid;
+    padding: 20px 40px;
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: rgb(163, 177, 138);
+}

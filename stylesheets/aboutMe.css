@@ -1,0 +1,140 @@
+body {
+    background-color: #DAD7CD;
+}
+
+a[target="_blank"] {
+    color: black;
+}
+
+/* main section */
+main p {
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 0 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    grid-gap: 20px;
+}
+
+main .sideNavBar {
+    border: solid;
+    position: fixed;
+    height: 67vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    background-color: #A3B18A;
+}
+
+main .sideNavBar ul {
+    list-style: none;
+}
+main .sideNavBar ul li {
+    margin: 50px 20px;
+}
+
+main .sideNavBar a {
+    text-decoration: none;
+    color: black;
+}
+
+main .sideNavBar a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 700;
+}
+
+main .content {
+    grid-column: 2/3;
+}
+
+main .content h2 {
+    color: #2E7D32;
+    font-size: 2rem;
+}
+
+main .content hr {
+    background-color: #2E7D32;
+    height: 4px;
+    margin: 10px 0;
+}
+
+#aboutMe, #passion, #Experiences, #GreenHacks {
+    scroll-margin-top: 90px;
+    padding: 30px;
+}
+
+/* about me section */
+main .content #aboutMe .aboutMeContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main .content #aboutMe .aboutMeContent .aboutMeText{
+    width: 80%;
+}
+
+main .content #aboutMe .aboutMeContent .aboutMeImg{
+    width: 20%;
+}
+
+main .content #aboutMe .aboutMeContent .aboutMeImg img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* green hacks */
+.examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.greenHacksEg .card{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 600ms;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+.front {
+    background: #A3B18A;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-size: 1.85rem;
+}
+
+.back {
+    background: #3A5A40;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    color: white;
+}
+
+.greenHacksEg:hover .card {
+    transform: rotateY(180deg);
+}

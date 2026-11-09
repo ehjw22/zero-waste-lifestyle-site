@@ -1,0 +1,244 @@
+/*image section*/
+.imgContainer {
+    background: url(../images/close-up-crystal-globe-resting-grass-forest.jpg); /* image from www.freepik.com */
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(120%);
+    z-index: 1;
+}
+
+.imgContainer h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow:
+    -1px -1px 0 #344E41,
+    1px -1px 0 #344E41,
+    -1px 1px 0 #344E41,
+    1px 1px 0 #344E41;
+}
+
+/* what are the zero waste principles */
+/* two column layout */
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DAD7CD;
+}
+
+.section1 .information {
+    width: 50%;
+    margin-left: 100px;
+}
+
+.section1 .information h2 {
+    color: #344E41;
+    font-size: 3.125rem;
+}
+
+.section1 .information p {
+    font-size: 1.3rem;
+}
+
+.section1 img {
+    margin: 40px 100px 40px 0px;
+    width: 30%;
+}
+    
+
+/* zero waste principle section */
+/* two column layout */
+.ZWPrinciples h2 {
+    font-size: 3.125rem;
+}
+
+.ZWPrinciples p {
+    font-size: 1.3rem;
+}
+/* even items */
+.ZWPrinciples section:nth-child(even) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3B18A;
+} 
+
+.ZWPrinciples section:nth-child(even) div {
+    color: #2a2a24;
+    width: 50%;
+    margin-left: 100px;
+} 
+
+.ZWPrinciples section:nth-child(even) img {
+    margin: 40px 100px 40px 0px;
+    width: 30%;
+} 
+
+/* odd items */
+.ZWPrinciples section:nth-child(odd) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #588157;
+} 
+
+.ZWPrinciples section:nth-child(odd) div {
+    width: 50%;
+    color: #2a2a24;
+    margin-right: 100px;
+}
+
+.ZWPrinciples section:nth-child(odd) img {
+    width: 30%;
+    margin: 40px 0 40px 100px;
+}
+
+/* statistics section */
+.statisticsSection .statisticsHeader {
+    text-align: center;
+    padding: 50px;
+    background-color: #DAD7CD;
+    font-size: 40px;
+}
+
+.statisticsSection p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.statisticsSection h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* first statistic, three column layout */
+.statisticsSection .statistics1 {
+    display: grid;
+    grid-template-columns: 550px 1fr 1fr;
+    grid-gap: 50px;
+    background-color: #A3B18A;
+}
+
+.statisticsSection .statistics1 .p1 {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    margin-top: 30px;
+}
+
+.statisticsSection .statistics1 .p2 {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.statisticsSection .statistics1 figure {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 30px;
+    margin-left: 120px;
+}
+
+/* second statistic, three column layout text takes up two columns*/
+.statisticsSection .statistics2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 800px;
+    grid-gap: 20px;
+    background-color: #588157;
+    padding-bottom: 20px;
+}
+
+.statisticsSection .statistics2 img{
+    width: 100%
+}
+
+.statisticsSection .statistics2 .p1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.statisticsSection .statistics2 .p1 h1 {
+    font-size: 3rem;
+}
+
+.statisticsSection .statistics2 .p2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: 120px;
+}
+
+.statisticsSection .statistics2 .p2 h1 {
+    font-size: 3rem;
+}
+
+.statisticsSection .statistics2 figure {
+    grid-column: 3/-1;
+    grid-row: 1/3;
+    margin: 30px 120px 30px 0;
+}
+
+/* examples section 3 column layout */
+.rweTitle {
+    text-align: center;
+    padding: 50px;
+    background-color: #DAD7CD;
+    font-size: 40px;
+}
+
+.rweContainer {
+    background-color: #A3B18A;
+    padding: 20px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    place-items: center;
+}
+
+.rweContainer .example-item {
+    border: solid;
+    width: 400px;
+    position: relative;
+}
+
+.rweContainer .example-item img {
+    display: block;
+    width: 100%
+}
+
+.rweContainer .example-item .exampleContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rweContainer .example-item .exampleContent p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.rweContainer .example-item:hover {
+    transform: scale(1.05);
+    border-color: green;
+    z-index: 1;
+}
+
+.rweContainer .example-item:hover p{
+    opacity: 1;
+}

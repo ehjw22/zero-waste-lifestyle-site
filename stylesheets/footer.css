@@ -1,0 +1,15 @@
+/* footer */
+footer {
+    color: white;
+    background-color: rgb(54, 51, 51);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: blue;
+}
